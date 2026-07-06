@@ -10,6 +10,15 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    macros {
+        git_approval: git_approval {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(L) &kp LS(G) &kp LS(T) &kp LS(M) &kp EXCL &kp SPACE &kp COLON &kp R &kp O &kp C &kp K &kp E &kp T &kp COLON>;
+            label = "GIT_APPROVAL";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
