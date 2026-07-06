@@ -17,6 +17,13 @@
             bindings = <&none &kp LS(L) &kp LS(G) &kp LS(T) &kp LS(M) &kp EXCL &kp SPACE &kp COLON &kp R &kp O &kp C &kp K &kp E &kp T &kp COLON>;
             label = "GIT_APPROVAL";
         };
+
+        run_ministack: run_ministack {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp D &kp O &kp C &kp K &kp E &kp R &kp SPACE &kp R &kp U &kp N &kp SPACE &kp MINUS &kp P &kp SPACE &kp N4 &kp N5 &kp N6 &kp N6 &kp COLON &kp N4 &kp N5 &kp N6 &kp N6 &kp SPACE &kp M &kp I &kp N &kp I &kp S &kp T &kp A &kp C &kp K &kp O &kp R &kp G &kp FSLH &kp M &kp I &kp N &kp I &kp S &kp T &kp A &kp C &kp K>;
+            label = "RUN_MINISTACK";
+        };
     };
 
     keymap {
